@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaaa – Auténtico Sabor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="images/hero-pizza.png" alt="Pizza" class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-badge">Auténtico Sabor</span>
+    <h1 class="hero-title">PIZZ<span>AAA</span></h1>
+    <p class="hero-sub">El sabor de tu barrio. Masa madre, ingredientes frescos y un horno que no descansa.</p>
+    <div class="hero-btns">
+      <button class="btn btn-primary" onclick="scrollToSection('menu')">Ver Menú</button>
+      <button class="btn btn-outline-white" onclick="scrollToSection('ubicacion')">Ubicación</button>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Nuestro Menú</h2>
+      <p class="section-sub">Hechas al momento, con el queso perfecto y la orilla crujiente.</p>
+    </div>
+    <nav class="cat-nav" id="cat-nav"></nav>
+    <div id="menu-content"></div>
+  </div>
+</section>
+
+<!-- COMBOS -->
+<section class="section combos-section" id="combos">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title section-title--light">Paquetes</h2>
+      <p class="section-sub section-sub--light">Para compartir o para ese antojo enorme.</p>
+    </div>
+    <div class="combos-grid" id="combos-grid"></div>
+  </div>
+</section>
+
+<!-- UBICACION -->
+<section class="section location-section" id="ubicacion">
+  <div class="container">
+    <div class="location-grid">
+      <div class="location-info">
+        <h2 class="section-title">Visítanos</h2>
+        <p class="location-desc">Ven a recoger tu pedido o disfruta tu pizza recién salida del horno.</p>
+        <div class="info-card">
+          <div class="info-icon info-icon--red">📍</div>
+          <div>
+            <strong>Ubicación</strong>
+            <p>Salina Cruz, Oaxaca, México</p>
+            <a href="https://maps.app.goo.gl/wmXfU1RYLXJmLJiQ8?g_st=ic" target="_blank" class="link-primary">Abrir en Google Maps →</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon info-icon--gold">🕐</div>
+          <div>
+            <strong>Horario</strong>
+            <p>Lunes a Domingo<br>1:00 PM – 10:30 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15327.19389402033!2d-95.21213055!3d16.17933965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85bfe664d7525957%3A0x2d82ea5a65cb6bef!2sParque%20Municipal!5e0!3m2!1sen!2smx!4v1781412653441!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-logo">PIZZAAA</span>
+    <p>&copy; <span id="year"></span> Pizzaaa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- MODAL OVERLAY -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- CART OVERLAY -->
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+
+<!-- CART PANEL -->
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-header">
+    <span class="cart-title">Tu Pedido</span>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer" id="cart-footer"></div>
+</div>
+
+<!-- CART FAB -->
+<button class="cart-fab" id="cart-fab" onclick="toggleCart()">
+  <span class="cart-fab-icon">🛒</span>
+  <span>Ver Carrito</span>
+  <span class="cart-badge hidden" id="cart-badge">0</span>
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>
