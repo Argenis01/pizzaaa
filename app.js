@@ -25,7 +25,7 @@ const ESP = {
 };
 
 const PIZZAS = [
-  { id:1,  name:'Dely Especial', desc:'Pierna, chile poblano, pollo y chorizo',                         cat:'Especialidades', prices:ESP,  img:'images/pizza-mexicana.png' },
+  { id:1,  name:'Especial', desc:'Pierna, chile poblano, pollo y chorizo',                         cat:'Especialidades', prices:ESP,  img:'images/pizza-mexicana.png' },
   { id:2,  name:'Hawaiana',      desc:'Jamón, piña y tocino',                                            cat:'Especialidades', prices:ESP,  img:'images/pizza-margherita.png' },
   { id:3,  name:'Combinada',     desc:'Champiñón, jamón, salami, pimiento verde, cebolla y chorizo',    cat:'Especialidades', prices:ESP, img: 'images/hero-pizza.png' },
   { id:4,  name:'Carnes Frías',  desc:'Jamón, salchicha, peperoni, salami y tocino',                    cat:'Especialidades', prices:ESP,  img:'images/pizza-pepperoni.png' },
@@ -38,7 +38,7 @@ const PIZZAS = [
   { id:11, name:'Peperoni',      desc:'Peperoni y queso',                                               cat:'Especialidades', prices:ESP,  img:'images/pizza-pepperoni.png' },
   { id:12, name:'Vegetariana',   desc:'Champiñón, pimiento verde, cebolla, piña y elote',               cat:'Especialidades', prices:ESP,  img:'images/pizza-veggie.png' },
   { id:13, name:'Camarón',       desc:'Camarón y queso',                                                cat:'Mariscos',       prices:{ small:130, medium:180, large:250, xlarge:310, cuadrada:380, mega:465 } , img: 'images/hero-pizza.png' },
-  { id:14, name:'Mar y Tierra',  desc:'Cebolla, aceituna, camarón y calamar',                           cat:'Mariscos',       prices:{ small:135, medium:190, large:260, xlarge:320, cuadrada:390, mega:475 } , img: 'images/hero-pizza.png' },
+  { id:14, name:'Marinera',  desc:'Cebolla, aceituna, camarón y calamar',                           cat:'Mariscos',       prices:{ small:135, medium:190, large:260, xlarge:320, cuadrada:390, mega:475 } , img: 'images/hero-pizza.png' },
 ];
 
 const COMBOS = [
@@ -57,7 +57,7 @@ const COMBOS = [
 ];
 
 const CATEGORIES = [...new Set(PIZZAS.map(p => p.cat))];
-const WA_PHONE = '529712070065';
+const WA_PHONE = '529711872883';
 
 /* ═══════════════════════════════════════════════════════
    CART STATE
