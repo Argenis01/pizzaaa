@@ -57,7 +57,7 @@ const COMBOS = [
 ];
 
 const CATEGORIES = [...new Set(PIZZAS.map(p => p.cat))];
-const WA_PHONE = '529711872883';
+const WA_PHONE = '529712070065';
 
 /* ═══════════════════════════════════════════════════════
    CART STATE
