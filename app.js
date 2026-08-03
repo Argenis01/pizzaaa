@@ -9,7 +9,7 @@ const SIZE_SLICES  = { small:'6 reb.', medium:'8 reb.', large:'10 reb.', xlarge:
 const CHEESE_EXTRA = { small:20, medium:30, large:40, xlarge:50 };
 const HALF_EXTRA = {
   small: 15,
-  medium: 20,
+  medium: 20, 
   large: 25,
   xlarge: 30,
   cuadrada: 20,
